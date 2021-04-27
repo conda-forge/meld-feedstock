@@ -1,5 +1,5 @@
 {% set name = "meld" %}
-{% set version = "0.4.19" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/maccallumlab/meld/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 969080a9632f2020fea0d43f69055de411af7f2e20c07822e93d9e10d7c64189
+  sha256: caa20f7823b423d1552ce74e4ecb2c60d007c60322fa0d27a38f41971c30cfb4
 
 build:
   number: 0
