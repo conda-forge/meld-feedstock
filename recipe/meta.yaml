@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/maccallumlab/meld/archive/refs/tags/{{ version }}.tar.gz
-  sha256: caa20f7823b423d1552ce74e4ecb2c60d007c60322fa0d27a38f41971c30cfb4
+  sha256: d47982f7ce9df210f1196db351b0ba1b39c3407924980e5d5db48f57c1ed533d
 
 build:
-  number: 0
+  number: 1
   skip: true  # [cuda_compiler_version in (undefined, 'None') or win or osx]
   missing_dso_whitelist:
     - "*/libcuda.*"
