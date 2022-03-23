@@ -30,6 +30,13 @@ requirements:
     - swig
     - openmm
     - eigen
+    - numpy
+    - scipy
+    - hdf4
+    - netcdf4
+    - ambertools
+    - parmed
+    - progressbar
 
   run:
     - python
@@ -40,7 +47,8 @@ requirements:
     - netcdf4
     - ambertools
     - parmed
-    - tqdm
+    - progressbar
+    - openmm
 
 test:
   requires:
