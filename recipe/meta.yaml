@@ -28,7 +28,7 @@ requirements:
     - python
     - pip
     - swig
-    - openmm
+    - openmm >=7.7.0
     - eigen
     - numpy
     - scipy
@@ -48,7 +48,7 @@ requirements:
     - ambertools
     - parmed
     - progressbar
-    - openmm
+    - openmm >=7.7.0
 
 test:
   requires:
