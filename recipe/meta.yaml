@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/maccallumlab/meld/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 762022ac1ce92964a853a8343ed279c8654febe73678bcef3539e9612cc6bcf6
+  sha256: e860fededb116c23e964abe7ea36c957529ecaee5197571512a04cd77e87a95c
 
 build:
   number: 0
