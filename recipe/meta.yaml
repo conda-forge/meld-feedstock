@@ -1,5 +1,5 @@
 {% set name = "meld" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/maccallumlab/meld/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d47982f7ce9df210f1196db351b0ba1b39c3407924980e5d5db48f57c1ed533d
+  sha256: e860fededb116c23e964abe7ea36c957529ecaee5197571512a04cd77e87a95c
 
 build:
-  number: 1
+  number: 0
   skip: true  # [cuda_compiler_version in (undefined, 'None') or win or osx]
   missing_dso_whitelist:
     - "*/libcuda.*"
@@ -28,8 +28,15 @@ requirements:
     - python
     - pip
     - swig
-    - openmm
+    - openmm >=7.7.0
     - eigen
+    - numpy
+    - scipy
+    - hdf4
+    - netcdf4
+    - ambertools
+    - parmed
+    - progressbar
 
   run:
     - python
@@ -40,7 +47,8 @@ requirements:
     - netcdf4
     - ambertools
     - parmed
-    - tqdm
+    - progressbar
+    - openmm >=7.7.0
 
 test:
   requires:
