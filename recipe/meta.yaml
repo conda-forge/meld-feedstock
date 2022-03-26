@@ -1,5 +1,5 @@
 {% set name = "meld" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/maccallumlab/meld/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e860fededb116c23e964abe7ea36c957529ecaee5197571512a04cd77e87a95c
+  sha256: aae8e5bfbdacc1e6de61768a3298314c51575cda477a511e98dc11f5730fd918
 
 build:
   number: 0
   skip: true  # [cuda_compiler_version in (undefined, 'None') or win or osx]
   missing_dso_whitelist:
-    - "*/libcuda.*"
+    - '*/libcuda.*'
 
 requirements:
   build:
@@ -65,7 +65,7 @@ about:
   home: https://github.com/maccallumlab/meld
   license: LGPL-3.0-or-later
   license_file: COPYING
-  summary: 'Modeling Employing Limited Data'
+  summary: Modeling Employing Limited Data
   description: |
     MELD is a GPU-accelerated framework for integratie structural biology.
   doc_url: https://github.com/maccallumlab/meld
