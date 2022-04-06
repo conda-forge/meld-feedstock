@@ -10,7 +10,7 @@ source:
   sha256: e860fededb116c23e964abe7ea36c957529ecaee5197571512a04cd77e87a95c
 
 build:
-  number: 0
+  number: 1
   skip: true  # [cuda_compiler_version in (undefined, 'None') or win or osx]
   missing_dso_whitelist:
     - "*/libcuda.*"
