@@ -247,4 +247,5 @@ Feedstock Maintainers
 =====================
 
 * [@jlmaccal](https://github.com/jlmaccal/)
+* [@mikemhenry](https://github.com/mikemhenry/)
 
