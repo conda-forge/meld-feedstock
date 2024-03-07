@@ -1,0 +1,20 @@
+From fed73432dd8e6116687c30e1bc9eba35790b97d8 Mon Sep 17 00:00:00 2001
+From: Justin MacCallum <justin.maccallum@ucalgary.ca>
+Date: Wed, 8 Mar 2023 16:47:19 -0700
+Subject: [PATCH] Fix swig errors
+
+---
+ plugin/python/meldplugin.i | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/plugin/python/meldplugin.i b/plugin/python/meldplugin.i
+index f03549b..156e2f7 100644
+--- a/plugin/python/meldplugin.i
++++ b/plugin/python/meldplugin.i
+@@ -5,6 +5,7 @@
+ 
+ %module meldplugin
+ 
++%include "factory.i"
+ %import(module="simtk.openmm") "swig/OpenMMSwigHeaders.i"
+ %include "swig/typemaps.i"
