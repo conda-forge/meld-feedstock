@@ -8,15 +8,18 @@ package:
 source:
   url: https://github.com/maccallumlab/meld/archive/refs/tags/{{ version }}.tar.gz
   sha256: aae8e5bfbdacc1e6de61768a3298314c51575cda477a511e98dc11f5730fd918
+  patches:
+    - patches/fix_swig.patch
 
 build:
-  number: 1
+  number: 2
   skip: true  # [cuda_compiler_version in (undefined, 'None') or win or osx]
   missing_dso_whitelist:
     - '*/libcuda.*'
 
 requirements:
   build:
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}
@@ -74,3 +77,4 @@ about:
 extra:
   recipe-maintainers:
     - jlmaccal
+    - mikemhenry
