@@ -23,10 +23,8 @@ hdf4:
 mpich:
 - '4'
 numpy:
-- '1.21'
+- '1.22'
 pin_run_as_build:
-  hdf4:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
@@ -37,8 +35,9 @@ target_platform:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-  - cuda_compiler_version
   - cdt_name
+  - cuda_compiler
+  - cuda_compiler_version
   - docker_image
 - - python
   - numpy
