@@ -28,6 +28,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - swig
     - openmm >=7.7.0
     - eigen
