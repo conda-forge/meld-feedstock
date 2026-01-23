@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}
     - {{ cdt('mesa-libgl-devel') }}
-    - cmake
+    - cmake <4
     - make
 
   host:
